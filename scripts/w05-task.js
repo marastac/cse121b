@@ -35,31 +35,32 @@ const reset = () => {
   templesElement.innerHTML = "";
 };
 
-/* filterTemples Function */
-const filterTemples = (temples) => {
-  reset();
+/* sortBy Function */
+const sortBy = () => {
   const filter = document.getElementById("filtered").value;
   switch(filter) {
     case "utah":
-      displayTemples(temples.filter(temple => temple.location.includes("Utah")));
+      templeList.sort((a, b) => (a.location > b.location) ? 1 : -1);
       break;
     case "notutah":
-      displayTemples(temples.filter(temple => !temple.location.includes("Utah")));
+      templeList.sort((a, b) => (a.location > b.location) ? -1 : 1);
       break;
     case "older":
-      displayTemples(temples.filter(temple => new Date(temple.dedicatedDate) < new Date(1950, 0, 1)));
+      templeList.sort((a, b) => (new Date(a.dedicatedDate) > new Date(b.dedicatedDate)) ? 1 : -1);
       break;
     case "all":
-      displayTemples(temples);
-      break;
+      
+     break;
     default:
       break;
   }
+  reset();
+  displayTemples(templeList);
 };
 
 /* Event Listener */
 document.getElementById("filtered").addEventListener("change", () => { 
-  filterTemples(templeList);
+  sortBy(templeList);
 });
 
 getTemples();
