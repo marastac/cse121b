@@ -1,0 +1,77 @@
+/* Additional styles for category1.html */
+
+/* Styles for the list of pet types */
+.category-info {
+  margin-bottom: 40px;
+}
+
+.category-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.category-info ul {
+  list-style: none;
+}
+
+.category-info li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Styles for the services section */
+.services {
+  margin-bottom: 40px;
+}
+
+.services h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the real experiences section */
+.experiences {
+  margin-bottom: 40px;
+}
+
+.experiences h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.experience-card {
+  background-color: #f48200;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.experience-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Styles for care and responsibilities section */
+.care-responsibilities {
+  margin-bottom: 40px;
+}
+
+.care-responsibilities h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
